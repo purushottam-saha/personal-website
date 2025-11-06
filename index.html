@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Purushottam Saha</title>
+  <meta name="description" content="Portfolio of Purushottam Saha — quantitative developer, data scientist, and researcher. Interests include: time-series, quantitative finance, ML, trading systems etc." />
+  <meta name="author" content="Purushottam Saha" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- tiny blank favicon, replace with /assets/favicon.ico -->
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Purushottam Saha — Portfolio" />
+  <meta property="og:description" content="quantitative developer, data scientist, and researcher, resume and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://purushottamsaha.in/" />
+  <meta property="og:image" content="/assets/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Firstname Lastname",
+    "url": "https://your-site.pages.dev/",
+    "sameAs": ["https://github.com/yourname","https://linkedin.com/in/yourname"],
+    "jobTitle": "Software Engineer",
+    "worksFor": {"@type":"Organization","name":"Independent"}
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#7c3aed; --glass: rgba(255,255,255,0.03);
+      --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    [data-theme="light"]{
+      --bg: #f5f7fb; --card:#ffffff; --muted:#4b5563; --accent:#6d28d9; --glass: rgba(15,23,42,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:var(--font-sans);background:linear-gradient(180deg,var(--bg),#081026);color: #e6eef8; -webkit-font-smoothing:antialiased;line-height:1.45}
+    a{color:inherit}
+    .container{max-width:1100px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{padding:8px 12px;border-radius:8px;color:var(--muted);text-decoration:none}
+    nav a:hover{background:var(--glass);color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;padding:20px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .intro h1{margin:0 0 8px 0;font-size:clamp(28px,4vw,40px)}
+    .intro p{margin:0;color:var(--muted)}
+    .cta{margin-top:16px;display:flex;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:0;cursor:pointer;background:linear-gradient(90deg,var(--accent),#3b82f6);color:white;text-decoration:none}
+    .secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* Skills / Projects */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chip{padding:8px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px;color:var(--muted)}
+
+    /* Project Card */
+    .proj-img{height:160px;border-radius:10px;background:linear-gradient(90deg, rgba(255,255,255,0.03), transparent);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    .proj-title{margin:8px 0 4px 0;font-weight:700}
+    .proj-desc{font-size:14px;color:var(--muted)}
+
+    /* Timeline */
+    .timeline{position:relative;padding-left:18px}
+    .timeline::before{content:'';position:absolute;left:6px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--accent),transparent)}
+    .event{position:relative;padding:12px 0}
+    .dot{position:absolute;left:-6px;top:18px;width:12px;height:12px;border-radius:50%;background:var(--card);box-shadow:0 0 0 4px rgba(124,58,237,0.12)}
+
+    /* Contact */
+    form{display:grid;gap:12px}
+    input,textarea{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px;padding-bottom:40px}
+
+    /* Responsive */
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+      nav{display:none}
+    }
+    @media (max-width:560px){
+      .grid-3{grid-template-columns:1fr}
+    }
+
+    /* Accessibility focus */
+    a:focus, button:focus, input:focus, textarea:focus{outline:2px solid rgba(124,58,237,0.32);outline-offset:2px}
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">FL</div>
+        <div>
+          <div style="font-weight:700">Firstname Lastname</div>
+          <div style="font-size:13px;color:var(--muted)">Software Engineer · Data Scientist</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="secondary" href="/resume.pdf" download>Resume</a>
+        <button id="theme-toggle" title="Toggle theme" style="padding:8px;border-radius:10px;border:0;background:transparent;color:var(--muted)">🌗</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card intro">
+          <h1>Hi — I'm Firstname. I build data-driven systems & research-grade ML.</h1>
+          <p>I design probabilistic forecasting models, trading strategies, and production-ready web apps. I like tidy code, reproducible experiments, and clean visualizations.</p>
+
+          <div class="skills">
+            <span class="chip">Python</span>
+            <span class="chip">R</span>
+            <span class="chip">Time Series</span>
+            <span class="chip">Hazard Models</span>
+            <span class="chip">React</span>
+            <span class="chip">Cloudflare Pages</span>
+          </div>
+
+          <div class="cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn secondary" href="#contact">Get in touch</a>
+          </div>
+
+          <div style="margin-top:18px;color:var(--muted);font-size:14px">Currently: Open to collaboration & research contracts</div>
+        </div>
+
+        <aside class="card">
+          <div style="display:flex;flex-direction:column;gap:12px;align-items:stretch">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-size:12px;color:var(--muted)">Location</div>
+                <div style="font-weight:700">City, Country</div>
+              </div>
+              <div>
+                <div style="font-size:12px;color:var(--muted)">Experience</div>
+                <div style="font-weight:700">5+ years</div>
+              </div>
+            </div>
+
+            <div style="padding-top:8px;border-top:1px dashed rgba(255,255,255,0.03)">
+              <div style="font-size:12px;color:var(--muted)">Top Languages</div>
+              <div style="margin-top:8px;font-weight:700">Python · R · TypeScript</div>
+            </div>
+
+            <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.03)">
+              <a style="font-size:13px;color:var(--muted);text-decoration:none" href="https://github.com/yourname" target="_blank">GitHub →</a>
+              <a style="font-size:13px;color:var(--muted);text-decoration:none" href="https://linkedin.com/in/yourname" target="_blank">LinkedIn →</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" style="margin-top:28px">
+        <h2 style="margin:0 0 12px 0">Selected projects</h2>
+        <div class="grid-3">
+          <article class="card">
+            <div class="proj-img">Project image</div>
+            <div class="proj-title">Probabilistic Day-Ahead Pricing</div>
+            <div class="proj-desc">ARFIMA + MGARCH + Conformal prediction pipeline for hourly electricity price forecasting. Code, experiments and reproducible notebook included.</div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="chip" href="#">Repo</a>
+              <a class="chip" href="#">Paper</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="proj-img">Project image</div>
+            <div class="proj-title">Options Microstructure Signals</div>
+            <div class="proj-desc">Order-book based features and microstructure alpha for F&O trading. Backtests and live-sim results.</div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="chip" href="#">Repo</a>
+              <a class="chip" href="#">Blog</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="proj-img">Project image</div>
+            <div class="proj-title">Real-time Card Game (P2P)</div>
+            <div class="proj-desc">Peer-to-peer sockets multiplayer card game built with WebRTC signalling and lightweight state sync.</div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="chip" href="#">Demo</a>
+              <a class="chip" href="#">Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills & Tools -->
+      <section id="skills" style="margin-top:28px">
+        <h2 style="margin:0 0 12px 0">Skills & tools</h2>
+        <div class="card">
+          <div class="grid-2">
+            <div>
+              <h3 style="margin:0 0 8px 0">Data & ML</h3>
+              <div class="skills">
+                <span class="chip">Time Series</span>
+                <span class="chip">Probabilistic Forecasting</span>
+                <span class="chip">Bayesian MCMC</span>
+                <span class="chip">Conformal Methods</span>
+                <span class="chip">TensorFlow / PyTorch</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 style="margin:0 0 8px 0">Engineering</h3>
+              <div class="skills">
+                <span class="chip">React</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Docker</span>
+                <span class="chip">Cloudflare Pages</span>
+                <span class="chip">CI / CD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline / Experience -->
+      <section id="experience" style="margin-top:28px">
+        <h2 style="margin:0 0 12px 0">Experience & education</h2>
+        <div class="card timeline">
+          <div class="event">
+            <div class="dot"></div>
+            <div style="font-weight:700">Senior Data Scientist — Company XYZ</div>
+            <div style="color:var(--muted);font-size:14px">2022 — Present</div>
+            <div style="margin-top:8px;color:var(--muted)">Worked on probabilistic electricity forecasting pipelines and trading backtests.</div>
+          </div>
+
+          <div class="event">
+            <div class="dot"></div>
+            <div style="font-weight:700">MSc in Statistics — University ABC</div>
+            <div style="color:var(--muted);font-size:14px">2018 — 2020</div>
+            <div style="margin-top:8px;color:var(--muted)">Thesis: Time-series econometrics for energy markets.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog preview -->
+      <section id="blog" style="margin-top:28px">
+        <h2 style="margin:0 0 12px 0">Recent writing</h2>
+        <div class="grid-2">
+          <article class="card">
+            <div style="font-weight:700">Hybrid Bayesian-Conformal for Energy Prices</div>
+            <div style="color:var(--muted);margin-top:8px">A practical guide to combining Bayesian posterior intervals with conformal calibrations for reliable probabilistic forecasts.</div>
+            <div style="margin-top:12px"><a class="chip" href="#">Read</a></div>
+          </article>
+
+          <article class="card">
+            <div style="font-weight:700">Order Book Microstructure Signals</div>
+            <div style="color:var(--muted);margin-top:8px">Feature engineering and evaluation for high-frequency options microstructure strategies.</div>
+            <div style="margin-top:12px"><a class="chip" href="#">Read</a></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" style="margin-top:28px">
+        <h2 style="margin:0 0 12px 0">Contact</h2>
+        <div class="card">
+          <div style="display:grid;gap:12px;grid-template-columns:1fr 360px">
+            <div>
+              <!-- Example using Formspree - replace action with your endpoint -->
+              <form action="https://formspree.io/f/your_form_id" method="POST" aria-label="Contact form">
+                <label class="sr-only">Name
+                  <input type="text" name="name" placeholder="Your name" required>
+                </label>
+                <label class="sr-only">Email
+                  <input type="email" name="email" placeholder="you@domain.com" required>
+                </label>
+                <label class="sr-only">Message
+                  <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                </label>
+                <div style="display:flex;gap:8px">
+                  <button type="submit" class="btn">Send message</button>
+                  <a class="btn secondary" href="mailto:you@domain.com">Email</a>
+                </div>
+              </form>
+            </div>
+
+            <aside style="padding-left:18px;border-left:1px dashed rgba(255,255,255,0.03)">
+              <div style="font-weight:700">Let's work together</div>
+              <div style="color:var(--muted);margin-top:8px">Available for freelance, consulting and research collaborations.</div>
+
+              <div style="margin-top:12px">
+                <div style="font-size:12px;color:var(--muted)">Email</div>
+                <div style="font-weight:700">you@domain.com</div>
+              </div>
+
+              <div style="margin-top:12px">
+                <div style="font-size:12px;color:var(--muted)">Social</div>
+                <div style="margin-top:8px;display:flex;gap:8px">
+                  <a class="chip" href="https://twitter.com/yourname">Twitter</a>
+                  <a class="chip" href="https://github.com/yourname">GitHub</a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Firstname Lastname · Built with ❤️ · Hosted on Cloudflare Pages</div>
+    </footer>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle with persistence
+    const btn = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const body = document.body;
+    const current = localStorage.getItem('site-theme') || 'dark';
+    document.body.setAttribute('data-theme', current);
+
+    btn.addEventListener('click', ()=>{
+      const t = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.body.setAttribute('data-theme', t);
+      localStorage.setItem('site-theme', t);
+    });
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (href === '#') return;
+        const el = document.querySelector(href);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth',block:'start'});
+        history.replaceState(null, '', href);
+      });
+    });
+
+    // Minimal analytics (replace with Cloudflare analytics or other)
+    // Example: send a fetch to your analytics endpoint
+    // fetch('/analytics', {method:'POST', body:JSON.stringify({path:location.pathname})});
+
+    // Accessibility: add skip link
+    (function(){
+      const skip = document.createElement('a');
+      skip.href = '#main';
+      skip.textContent = 'Skip to content';
+      skip.style.position='absolute';skip.style.left='-999px';skip.style.top='auto';skip.style.width='1px';skip.style.height='1px';skip.style.overflow='hidden';
+      skip.addEventListener('focus', ()=>{skip.style.left='10px';skip.style.top='10px';skip.style.width='auto';skip.style.height='auto';skip.style.background='white';skip.style.color='black';skip.style.padding='8px';});
+      document.body.prepend(skip);
+    })();
+  </script>
+</body>
+</html>
