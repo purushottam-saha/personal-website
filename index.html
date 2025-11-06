@@ -98,7 +98,7 @@
   <div class="container">
     <header>
       <div class="brand">
-        <div class="logo">FL</div>
+        <div class="logo">PS</div>
         <div>
           <div style="font-weight:700">Purushottam Saha</div>
           <div style="font-size:13px;color:var(--muted)">Quantitative Developer · Data Scientist</div>
@@ -110,7 +110,7 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a class="secondary" href="/resume.pdf" download>Resume</a>
+        <a class="secondary" href="/CV_Purushottam_Saha.pdf" download>Resume</a>
         <button id="theme-toggle" title="Toggle theme" style="padding:8px;border-radius:10px;border:0;background:transparent;color:var(--muted)">🌗</button>
       </nav>
     </header>
@@ -118,16 +118,20 @@
     <main>
       <section class="hero">
         <div class="card intro">
-          <h1>Hi — I'm Purushottam Saha. I build data-driven systems & research-grade ML.</h1>
-          <p>I design probabilistic forecasting models, trading strategies, and production-ready web apps. I like tidy code, reproducible experiments, and clean visualizations.</p>
+          <h3>Hello! I'm Purushottam, a postgraduate student at Indian Statistical Institute, Kolkata, specializing in Quantitative Finance and Statistical Modelling.</h3> 
+          <p>My academic journey has been shaped by a deep interest in applying advanced statistical and computational techniques to real-world problems in energy economics, finance, and complex systems.</p>
+          <p>I completed my Bachelor's degree in Statistics from the Indian Statistical Institute, Kolkata, followed by a Master's in Applied Statistics, where I focused on high-dimensional time series, probabilistic forecasting, and Bayesian methods.</p>
+          <p>My research interests lie at the intersection of high-dimensional statistics, stochastic modelling, and optimization, with applications in electricity price forecasting, risk modeling, and financial econometrics. I currently work on developing hybrid Bayesian and conformal frameworks for reliable probabilistic forecasts in high-dimensional energy markets. Previously, I have worked on projects involving ARFIMA-GARCH modelling, regime-switching dynamics, and microstructure-based option trading models.</p>
+          <p>Outside academia, I enjoy exploring the intersection of data, systems, and strategy — whether through algorithmic trading simulations, model optimization challenges, or open-source contributions. Beyond research, I'm passionate about football, music, wildlife, and cooking. I speak English, Bengali, and Hindi, and enjoy learning new programming languages and statistical frameworks.</p>
 
           <div class="skills">
             <span class="chip">Python</span>
             <span class="chip">R</span>
             <span class="chip">Time Series</span>
-            <span class="chip">Hazard Models</span>
-            <span class="chip">React</span>
-            <span class="chip">Cloudflare Pages</span>
+            <span class="chip">Quantitative Finance</span>
+            <span class="chip">Robust PCA</span>
+            <span class="chip">Game Theory</span>
+            <span class="chip">Algorithms</span>
           </div>
 
           <div class="cta">
@@ -157,8 +161,8 @@
             </div>
 
             <div style="display:flex;gap:8px;align-items:center;justify-content:space-between;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.03)">
-              <a style="font-size:13px;color:var(--muted);text-decoration:none" href="https://github.com/yourname" target="_blank">GitHub →</a>
-              <a style="font-size:13px;color:var(--muted);text-decoration:none" href="https://linkedin.com/in/yourname" target="_blank">LinkedIn →</a>
+              <a style="font-size:13px;color:var(--muted);text-decoration:none" href="https://github.com/purushottam-saha" target="_blank">GitHub →</a>
+              <a style="font-size:13px;color:var(--muted);text-decoration:none" href="https://linkedin.com/in/purushottam-saha" target="_blank">LinkedIn →</a>
             </div>
           </div>
         </aside>
@@ -168,17 +172,28 @@
       <section id="projects" style="margin-top:28px">
         <h2 style="margin:0 0 12px 0">Selected projects</h2>
         <div class="grid-3">
+          
+          <article class="card">
+            <div class="proj-img">Project image</div>
+            <div class="proj-title">Statistical Arbitrage in Electricity Markets</div>
+            <div class="proj-desc">My master's thesis explores data-driven trading strategies in day-ahead and intraday electricity markets using high-dimensional time series and probabilistic forecasting techniques. The work focuses on identifying and exploiting transient mispricings through cointegration, regime-switching, and sparse factor models, integrating insights from financial econometrics and energy systems. The goal is to develop interpretable, risk-aware arbitrage strategies that align with the unique dynamics of electricity price formation. (Work in progress) </div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <!-- <a class="chip" href="#">Repo</a> -->
+              <!-- <a class="chip" href="#">Paper</a> -->
+            </div>
+          </article>
+          
           <article class="card">
             <div class="proj-img">Project image</div>
             <div class="proj-title">Probabilistic Day-Ahead Pricing</div>
-            <div class="proj-desc">ARFIMA + MGARCH + Conformal prediction pipeline for hourly electricity price forecasting. Code, experiments and reproducible notebook included.</div>
+            <div class="proj-desc">This ongoing work develops a hybrid modeling framework that combines long-memory dynamics from ARFIMA with regime-switching GARCH volatility structures to capture persistence and structural shifts in hourly electricity prices. The model aims to improve probabilistic forecast accuracy by jointly modeling mean reversion, volatility clustering, and regime-dependent behaviors inherent in energy markets.</div>
             <div style="margin-top:12px;display:flex;gap:8px">
-              <a class="chip" href="#">Repo</a>
-              <a class="chip" href="#">Paper</a>
+              <a class="chip" href="#">Report</a>
+              <!-- <a class="chip" href="#">Paper</a> -->
             </div>
           </article>
 
-          <article class="card">
+          <!-- <article class="card">
             <div class="proj-img">Project image</div>
             <div class="proj-title">Options Microstructure Signals</div>
             <div class="proj-desc">Order-book based features and microstructure alpha for F&O trading. Backtests and live-sim results.</div>
@@ -186,17 +201,29 @@
               <a class="chip" href="#">Repo</a>
               <a class="chip" href="#">Blog</a>
             </div>
-          </article>
+          </article> -->
 
           <article class="card">
             <div class="proj-img">Project image</div>
-            <div class="proj-title">Real-time Card Game (P2P)</div>
-            <div class="proj-desc">Peer-to-peer sockets multiplayer card game built with WebRTC signalling and lightweight state sync.</div>
+            <div class="proj-title">Quantitative Rule-Based Strategy Modelling in Classic Indian Rummy: A Metric Optimization Approach</div>
+            <div class="proj-desc">In this report, we developed a combinatorial metric MinDist, to evaluate a hand of Indian Rummy, and guide play. Incorporated heuristic opponent modelling, compared and showed improvement over existing strategies (MinScore) through extensive simulation study.</div>
             <div style="margin-top:12px;display:flex;gap:8px">
-              <a class="chip" href="#">Demo</a>
-              <a class="chip" href="#">Code</a>
+              <a class="chip" href="#">To be available soon...</a>
+              <!-- <a class="chip" href="#">Code</a> -->
             </div>
           </article>
+          
+          <article class="card">
+            <div class="proj-img">Project image</div>
+            <div class="proj-title">Robust PCA for background-foreground separation</div>
+            <div class="proj-desc">Review of robust and online PCA techniques, applied to the context of background (low-dimension) separation from foreground (sparse), with applications in video surveillance. Application to benchmark datasets and real-life examples, with comparisons across different methods discussed.</div>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="chip" href="https://github.com/purushottam-saha/RobustPCA">Repo</a>
+              <!-- <a class="chip" href="#">Blog</a> -->
+            </div>
+          </article>
+
+          
         </div>
       </section>
 
@@ -216,7 +243,7 @@
               </div>
             </div>
 
-            <div>
+            <!-- <div>
               <h3 style="margin:0 0 8px 0">Engineering</h3>
               <div class="skills">
                 <span class="chip">React</span>
@@ -225,7 +252,7 @@
                 <span class="chip">Cloudflare Pages</span>
                 <span class="chip">CI / CD</span>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -236,21 +263,36 @@
         <div class="card timeline">
           <div class="event">
             <div class="dot"></div>
-            <div style="font-weight:700">Senior Data Scientist — Company XYZ</div>
-            <div style="color:var(--muted);font-size:14px">2022 — Present</div>
-            <div style="margin-top:8px;color:var(--muted)">Worked on probabilistic electricity forecasting pipelines and trading backtests.</div>
+            <div style="font-weight:700">Quant Summer Analyst — Goldman Sachs</div>
+            <div style="color:var(--muted);font-size:14px">MAy2025 — Jul 2025</div>
+            <div style="margin-top:8px;color:var(--muted)">Revamped the monitoring framework for 1700+ scenario design models across asset classes, automating breach detection, documentation, and impact analysis to reduce manual effort and quantify model performance effects</div>
           </div>
 
           <div class="event">
             <div class="dot"></div>
-            <div style="font-weight:700">MSc in Statistics — University ABC</div>
-            <div style="color:var(--muted);font-size:14px">2018 — 2020</div>
-            <div style="margin-top:8px;color:var(--muted)">Thesis: Time-series econometrics for energy markets.</div>
+            <div style="font-weight:700">Remote Research Intern — Games24x7</div>
+            <div style="color:var(--muted);font-size:14px">MAy2025 — Jul 2025</div>
+            <div style="margin-top:8px;color:var(--muted)">Developed combinatorial heuristics and heuristic-driven strategies for Rummy outperforming benchmarks, designed Elo-based skill rating systems, and established statistical evidence of skill through empirical and large-scale simulations.</div>
+          </div>
+
+          <div class="event">
+            <div class="dot"></div>
+            <div style="font-weight:700">Master of Statistics — Indian Statistical Institute</div>
+            <div style="color:var(--muted);font-size:14px">2024 — Ongoing (Expected Graduation: 2026)</div>
+            <div style="margin-top:8px;color:var(--muted)">Specialization: Quantitative Finance</div>
+            <div style="margin-top:8px;color:var(--muted)">Thesis: Statistical arbitrage in electricity markets.</div>
+          </div>
+
+          <div class="event">
+            <div class="dot"></div>
+            <div style="font-weight:700">Bachelor of Statistics — Indian Statistical Institute</div>
+            <div style="color:var(--muted);font-size:14px">2021 — 2024</div>
+            <div style="margin-top:8px;color:var(--muted)">Thesis: Analysis of Periodic Labour Force Survey data.</div>
           </div>
         </div>
       </section>
 
-      <!-- Blog preview -->
+      <!-- # Blog preview
       <section id="blog" style="margin-top:28px">
         <h2 style="margin:0 0 12px 0">Recent writing</h2>
         <div class="grid-2">
@@ -266,7 +308,7 @@
             <div style="margin-top:12px"><a class="chip" href="#">Read</a></div>
           </article>
         </div>
-      </section>
+      </section> -->
 
       <!-- Contact -->
       <section id="contact" style="margin-top:28px">
@@ -277,17 +319,17 @@
               <!-- Example using Formspree - replace action with your endpoint -->
               <form action="https://formspree.io/f/your_form_id" method="POST" aria-label="Contact form">
                 <label class="sr-only">Name
-                  <input type="text" name="name" placeholder="Your name" required>
+                  <input type="text" name="name" placeholder="Purushottam Saha" required>
                 </label>
                 <label class="sr-only">Email
-                  <input type="email" name="email" placeholder="you@domain.com" required>
+                  <input type="email" name="email" placeholder="example@gmail.com" required>
                 </label>
                 <label class="sr-only">Message
                   <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
                 </label>
                 <div style="display:flex;gap:8px">
                   <button type="submit" class="btn">Send message</button>
-                  <a class="btn secondary" href="mailto:you@domain.com">Email</a>
+                  <a class="btn secondary" href="mailto:me@purushottamsaha.in">Email</a>
                 </div>
               </form>
             </div>
@@ -298,14 +340,15 @@
 
               <div style="margin-top:12px">
                 <div style="font-size:12px;color:var(--muted)">Email</div>
-                <div style="font-weight:700">you@domain.com</div>
+                <div style="font-weight:700">me@purushottamsaha.in</div>
               </div>
 
               <div style="margin-top:12px">
                 <div style="font-size:12px;color:var(--muted)">Social</div>
                 <div style="margin-top:8px;display:flex;gap:8px">
-                  <a class="chip" href="https://twitter.com/yourname">Twitter</a>
-                  <a class="chip" href="https://github.com/yourname">GitHub</a>
+                  <!-- <a class="chip" href="https://twitter.com/yourname">Twitter</a> -->
+                  <a class="chip" href="https://github.com/purushottam-saha">GitHub</a>
+                  <a class="chip" href="https://linkedin.com/purushottam-saha">GitHub</a>
                 </div>
               </div>
             </aside>
@@ -316,7 +359,7 @@
     </main>
 
     <footer>
-      <div>© <span id="year"></span> Firstname Lastname · Built with ❤️ · Hosted on Cloudflare Pages</div>
+      <div>© <span id="year"></span> Purushottam Saha · Built with ❤️ · Hosted on Cloudflare Pages</div>
     </footer>
   </div>
 
